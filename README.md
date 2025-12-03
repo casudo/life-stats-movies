@@ -1,5 +1,5 @@
 <div align="center">
-  <img width="400" alt="Logo" src="ExcelIMDb.png"></a>
+  <img width="400" alt="Logo" src="pictures/ExcelIMDb.png"></a>
   <br>
   <h1>Excel x IMDb</h1>
   This project is a used to display various statistics regarding watched movies in real life. If the user tracks when and how often they watched a movie in an Excel sheet, this tool can enrich the data with information from the IMDb API like ratings, genres, cast, and more and display it in a GUI for "interesting" visualization.
@@ -17,6 +17,9 @@
 
 - [Prerequisites](#prerequisites)
 - [Usage](#usage)
+- [Step 0: Dependencies](#step-0-dependencies)
+- [Step 1: Preparation](#step-1-preparation)
+- [Step 2: Run the script](#step-2-run-the-script)
 - [Planned for the future](#planned-for-the-future)
   - [Thanks to](#thanks-to)
   - [License](#license)
@@ -39,13 +42,30 @@ If you keep track of the movies you've watched in this fashion..
 
 ## Usage
 
-Planned ...
+## Step 0: Dependencies
+
+Make sure you have all dependencies installed to run the script.
+
+## Step 1: Preparation
+
+Fill in all the constants in the Python script and make sure that the sheets / rows / columns exist in your Excel file. The list of movies you've watched can be sorted but it's not mandatory.
+
+## Step 2: Run the script
+
+Run the Python script. It will read your Excel file, fetch data from the IMDb API, and enrich your sheet with additional information.
+In the end your Excel sheet will look like this:
+
+![Backend Sheet](/pictures/excel_backend_sheet.png)
+
+In there you can freely sort and filter your data.
+
+If you add new movies to your list, simply rerun the script to update your sheet with the latest IMDb data. The script will only fetch data for movies that don't have an IMDb ID yet, ensuring that your existing data remains intact.
 
 ---
 
 ## Planned for the future
 
-- Little GUI with input for the constants file and progress bar?
+- Little GUI with input for the constants and progress bar
 - Support for other languages titles than English
 - Dont hardcode the column indexes
 - Add way for visualization
