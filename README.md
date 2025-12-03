@@ -48,7 +48,7 @@ Make sure you have all dependencies installed to run the script.
 
 ## Step 1: Preparation
 
-Fill in all the constants in the Python script and make sure that the sheets / rows / columns exist in your Excel file. The list of movies you've watched can be sorted but it's not mandatory.
+Copy the `env.example` file to `.env` and adjust the constants as needed. Make sure that the sheets / rows / columns exist in your Excel file. The list of movies you've watched can be sorted but it's not mandatory.
 
 ## Step 2: Run the script
 
